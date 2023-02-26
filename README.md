@@ -3,7 +3,7 @@
 A small Swift Package introducing an `AnyTask` type, providing type-erasure for Swift `Task`s, which makes it very easy 
 to store in a collection since the generics are removed.
 
-Additionally, an `AnyTask` will cancel itself when it is being destroyed, releiving you of the need to manually cancel any
+Additionally, an `AnyTask` will cancel itself when it is being destroyed, relieving you of the need to manually cancel any
 pending tasks when a collection of `AnyTask`s is destroyed. You can also opt out of this behaviour if you prefer.
 
 Finally, an `AnyTask` can also be configured to fail an assertion in debug mode if a cancellation attempt occurs when the
