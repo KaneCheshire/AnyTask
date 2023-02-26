@@ -91,7 +91,7 @@ final class AnyTaskTests: XCTestCase {
         XCTAssertNil(sut)
     }
 
-    func test_GivenAlreadyCancelled_WhenCancelCalled_ThenAssertionHandlerCancelled() {
+    func test_GivenAlreadyCancelled_WhenCancelCalled_ThenAssertionHandlerCalled() {
         // Given
         let task = Task {}
         task.cancel()
@@ -108,7 +108,7 @@ final class AnyTaskTests: XCTestCase {
         waitForExpectations(timeout: 0)
     }
 
-    func test_GivenAlreadyCancelled_WhenCancelCalled_ThenAssertionHandlerNotCancelled() {
+    func test_GivenAlreadyCancelled_WhenCancelCalled_ThenAssertionHandlerNotCalled() {
         // Given
         let task = Task {}
         task.cancel()
